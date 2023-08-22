@@ -10,16 +10,16 @@
 
 ## Display Attribute
 - block
-![](https://github.com/KangminNa/Django_Pinterest/blob/main12/1.png?raw=true)
+![](https://github.com/KangminNa/Django_Pinterest/blob/main/12/1.png?raw=true)
 - inline
-![](https://github.com/KangminNa/Django_Pinterest/blob/main12/2.png?raw=true)
+![](https://github.com/KangminNa/Django_Pinterest/blob/main/12/2.png?raw=true)
 - inline-block
-![](https://github.com/KangminNa/Django_Pinterest/blob/main12/3.png?raw=true)
+![](https://github.com/KangminNa/Django_Pinterest/blob/main/12/3.png?raw=true)
 - None : 그냥 없어요. 있긴 있는데 없어요
 
 ## Visibility Attribute
 - Hidden
-![](https://github.com/KangminNa/Django_Pinterest/blob/main12/4.png?raw=true)
+![](https://github.com/KangminNa/Django_Pinterest/blob/main/12/4.png?raw=true)
 - 보이지만 않을 뿐 그냥 투명하게 됨. 자리를 차지함, None과는 반대임. 그냥 없음.
 
 ## SIZE Attribute
@@ -50,4 +50,4 @@
     - 그래서 우리는 rem과 %를 사용할거임!
 
 - 정리
-![](https://github.com/KangminNa/Django_Pinterest/blob/main12/5.png?raw=true)
+![](https://github.com/KangminNa/Django_Pinterest/blob/main/12/5.png?raw=true)
