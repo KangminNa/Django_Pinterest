@@ -1,4 +1,4 @@
-# 22.
+# 22. Login/Logout 구현
 
 ## 수업내용
 - Login View

@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load bootstrap5 %}
 
 {% block content %}
 
-    <div style="text-align: center">
+    <div style="text-align: center; max-width: 500px; margin: 4rem auto" >
         <dic>
             <h4>Login</h4>
         </dic>
@@ -10,8 +11,10 @@
         <div>
             <form action="" method="post">
                 {% csrf_token %}
-                {{ form }}
-                <input type="submit" class="btn btn-primary">
+                {% bootstrap_form form %}
+
+                <input type="submit" class="btn btn-dark rounded-pill col-6 mt-3">
+                <!-- col-6 : 부모의 너비 비율(반을 가져감), mt-3 : 마진Top 3배(비율)-->
             </form>
         </div>
     </div>
