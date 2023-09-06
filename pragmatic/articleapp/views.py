@@ -2,7 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
 from django.utils.decorators import method_decorator
-from django.views.generic import CreateView, DetailView, DeleteView
+from django.views.generic import CreateView, DetailView, DeleteView, UpdateView
+
 
 from articleapp.decorators import article_ownership_required
 from articleapp.forms import ArticleCreationForm
@@ -33,7 +34,7 @@ class ArticleDetailView(DetailView):
 
 @method_decorator(article_ownership_required, 'get')
 @method_decorator(article_ownership_required, 'post')
-class ArticleUpdateView(CreateView):
+class ArticleUpdateView(UpdateView):  # 이 부분은 CreateView에서 UpdateView로 수정되어야 합니다.
     model = Article
     context_object_name = 'target_article'
     form_class = ArticleCreationForm
