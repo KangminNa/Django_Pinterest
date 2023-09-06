@@ -8,9 +8,18 @@
             <p style="font-family: 'Bebas Neue', sans-serif">
                 {{ target_user.date_joined }}
             </p>
+
+            {% if target_user.profile %}
             <h2 style="font-family: 'Bebas Neue', sans-serif">
-                {{ target_user.username }}
+                {{ target_user.profile.nickname }}
             </h2>
+            {% else %}
+            <a href="{% url 'profileapp:create' %}">
+                <h2>
+                    Create Profile
+                </h2>
+            </a>
+            {% endif %}
 
             {% if target_user == user %}
                 <a href="{% url 'accountapp:update' pk=target_user.pk %}">
