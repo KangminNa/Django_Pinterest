@@ -1,4 +1,4 @@
-# 36. Articleapp 구현
+# 36. ListView, Pagination 소개 및 적용
 
 ## 수업내용
 - CRUD에 해당하는 app을 만듬
