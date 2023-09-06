@@ -35,7 +35,7 @@ class ProfileUpdateView(UpdateView):
     form_class = ProfileCreationForm
     context_object_name = 'target_profile'
     template_name = 'profileapp/update.html'
-    
+
     def get_success_url(self):
         return reverse('accountapp:detail', kwargs={'pk': self.object.user.pk})
     # 인자를 보내주기 위한 함수 생성 pk를 보내야하는 detail에서 보내기 위한 함수
